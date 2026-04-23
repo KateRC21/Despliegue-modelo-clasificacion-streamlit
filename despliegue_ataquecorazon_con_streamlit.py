@@ -35,7 +35,7 @@ hypertension = st.selectbox('hypertension', ["Yes", "No"])
 heart_disease = st.selectbox('heart_disease', ["Yes", "No"])
 ever_married  = st.selectbox('ever_married ', ["Yes", "No"])
 avg_glucose_level = st.number_input('avg_glucose_level', min_value=51.12, max_value=271.74)
-smoking_status = st.selectbox('smoking_status', ['Unknown', ''never smoked'', ''formerly smoked'', 'smokes'])
+smoking_status = st.selectbox('smoking_status', ["Unknown", "'never smoked'", "'formerly smoked'", "smokes"])
 
 
 
