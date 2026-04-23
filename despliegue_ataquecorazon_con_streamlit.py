@@ -21,7 +21,7 @@ import matplotlib.pyplot as plt
 
 import pickle
 filename = 'modelo-class.pkl'
-modelo, min_max_scaler, variables = pickle.load(open(filename, 'rb'))
+modelo, labelencoder, variables, min_max_scaler = pickle.load(open(filename, 'rb'))
 
 #Interfaz gráfica
 #Se crea interfaz gráfica con streamlit para captura de los datos
