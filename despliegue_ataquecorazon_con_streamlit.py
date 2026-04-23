@@ -40,7 +40,7 @@ smoking_status = st.selectbox('smoking_status', ["Yes", "No"])
 
 
 #Dataframe
-datos = [[age,hypertension,heart_disease,ever_married,avg_glucose_level,smoking_status,stroke_ataque_corazon]]
+datos = [[age,hypertension,heart_disease,ever_married,avg_glucose_level,smoking_status]]
 data = pd.DataFrame(datos, columns=['age','hypertension','heart_disease','ever_married','avg_glucose_level','smoking_status']) #Dataframe con los mismos nombres de variables
 
 #Se realiza la preparación
