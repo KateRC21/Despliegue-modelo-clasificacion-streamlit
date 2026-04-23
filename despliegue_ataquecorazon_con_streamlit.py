@@ -72,6 +72,9 @@ data.head()
 #Predicciones finales
 data
 
+#Checkpoint
+st.subheader("Prediccion")
+st.write(Y_pred)
 # Recordar medida de error del modelo
 
 st.warning("El modelo tiene un área bajo la curva ROC de 0.83")
