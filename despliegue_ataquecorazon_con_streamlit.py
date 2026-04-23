@@ -36,18 +36,18 @@ heart_disease = st.selectbox('heart_disease', ["Yes", "No"])
 ever_married  = st.selectbox('ever_married ', ["Yes", "No"])
 avg_glucose_level = st.number_input('avg_glucose_level', min_value=51.12, max_value=271.74)
 smoking_status = st.selectbox('smoking_status', ["Yes", "No"])
-stroke_ataque_corazon = st.selectbox('stroke_ataque_corazon', ["Yes", "No"])
+
 
 
 #Dataframe
 datos = [[age,hypertension,heart_disease,ever_married,avg_glucose_level,smoking_status,stroke_ataque_corazon]]
-data = pd.DataFrame(datos, columns=['age','hypertension','heart_disease','ever_married','avg_glucose_level','smoking_status','stroke_ataque_corazon']) #Dataframe con los mismos nombres de variables
+data = pd.DataFrame(datos, columns=['age','hypertension','heart_disease','ever_married','avg_glucose_level','smoking_status']) #Dataframe con los mismos nombres de variables
 
 #Se realiza la preparación
 data_preparada=data.copy()
 
 #En despliegue drop_first= False
-data_preparada = pd.get_dummies(data_preparada, columns=['age','hypertension','heart_disease','ever_married','avg_glucose_level','smoking_status','stroke_ataque_corazon'], drop_first=False, dtype=int)
+data_preparada = pd.get_dummies(data_preparada, columns=['age','hypertension','heart_disease','ever_married','avg_glucose_level','smoking_status'], drop_first=False, dtype=int)
 data_preparada.head()
 
 #Se adicionan las columnas faltantes
