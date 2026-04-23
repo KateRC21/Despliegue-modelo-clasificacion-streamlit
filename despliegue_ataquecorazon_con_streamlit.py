@@ -57,7 +57,7 @@ data_preparada.head()
 #Se normaliza la edad para predecir con Knn, Red, SVM
 #En los despliegues no se llama fit
 variables_numericas=['age','avg_glucose_level']
-data_preparada[[variables_numericas]]= min_max_scaler.transform(data_preparada[[variables_numericas]])
+data_preparada[variables_numericas]= min_max_scaler.transform(data_preparada[variables_numericas])
 data_preparada.head()
 
 """#**Predicciones**"""
